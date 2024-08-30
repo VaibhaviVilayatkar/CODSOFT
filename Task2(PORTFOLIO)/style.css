@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #1A1A40;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+section {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+h2 {
+  text-align: center;
+  color: #16549b;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* About Section */
+#about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-image {
+  max-width: 200px;
+  border-radius: 50%;
+  border: 4px solid #E0BBE4;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/* Skills Section */
+#skills {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-content h3 {
+  color: #3c77bb;
+  margin-bottom: 1rem;
+}
+
+.skills-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-content li {
+  background:#e7ccea;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Education Section */
+#education {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-item {
+  margin-bottom: 1.5rem;
+}
+
+.education-item h3 {
+  color: #1A1A40;
+  margin-bottom: 0.5rem;
+}
+
+/* Resume Section */
+#resume {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #006D77;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #4A90E2;
+}
+
+/* Contact Section */
+#contact {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.contact-info a {
+  color: #4A90E2;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1A1A40;
+  color: white;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+}

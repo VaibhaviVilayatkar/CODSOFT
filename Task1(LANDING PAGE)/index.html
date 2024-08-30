@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel: Explore the Unseen</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="nav">
+            <img id="logo" src="./logo1.png" alt="Company Logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img class="hero-image" src="./varanasiexpressway.jpg" alt="varanasiexpressway">
+        <div class="hero-text">
+            <h1>Your Dream Vacation Starts Here</h1>
+            <p>Explore the unseen and discover new horizons with us.</p>
+            <button class="cta-button">Start Your Journey</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Service Buttons -->
+        <div class="button-container">
+            <button class="button" onclick="openLink(event, 'Flight')">Flight</button>
+            <button class="button" onclick="openLink(event, 'Hotel')">Hotel</button>
+            <button class="button" onclick="openLink(event, 'Car')">Rental</button>
+        </div>
+
+        <!-- Flight Section -->
+        <section id="Flight" class="section flight">
+            <h3>Travel the World with Us</h3>
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="depart">From</label>
+                    <input id="depart" class="input-field" type="text" placeholder="Departing from">
+                </div>
+                <div class="input-box">
+                    <label for="arrive">To</label>
+                    <input id="arrive" class="input-field" type="text" placeholder="Arriving at">
+                </div>
+            </div>
+            <button class="action-button">Search and Find Dates</button>
+        </section>
+
+        <!-- Hotel Section -->
+        <section id="Hotel" class="section hotel">
+            <h3>Find the Best Hotels</h3>
+            <p>Book a hotel with us and get the best fares and promotions.</p>
+            <p>We know hotels – we know comfort.</p>
+            <button class="action-button">Search Hotels</button>
+        </section>
+
+        <!-- Car Rental Section -->
+        <section id="Car" class="section car">
+            <h3>Best Car Rental in the World!</h3>
+            <p><span class="discount">DISCOUNT!</span> Special offer if you book today: 25% off anywhere in the world with CarServiceRentalRUs</p>
+            <input class="input-field pickup" type="text" placeholder="Pick-up point">
+            <button class="action-button">Search Availability</button>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="cta" class="cta">
+            <h3>Ready to Explore?</h3>
+            <p>Join millions of travelers who trust us to book their dream vacations.</p>
+            <button class="cta-button">Get Started</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h5>Find Us On</h5>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2024 Travel Explore. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openLink(event, sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            const targetSection = document.getElementById(sectionId);
+            targetSection.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
